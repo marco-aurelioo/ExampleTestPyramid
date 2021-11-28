@@ -28,3 +28,11 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'com.tiozao.teste.AppWithSwagger.AppWithseggerApplication'
+		)
+	}
+}
