@@ -35,4 +35,8 @@ public class BagServices {
         }
         return item;
     }
+
+    public BagDto findBag(String id_profile) {
+        return map_bags.get(id_profile);
+    }
 }

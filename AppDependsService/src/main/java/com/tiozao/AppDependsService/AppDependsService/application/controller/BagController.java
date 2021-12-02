@@ -6,8 +6,6 @@ import com.tiozao.AppDependsService.AppDependsService.application.domain.BagServ
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.websocket.server.PathParam;
-
 @RestController
 public class BagController {
 
@@ -18,14 +16,15 @@ public class BagController {
     }
 
     @GetMapping("/{id_profile}/bag")
-    public ResponseEntity<BagDto> findBag(@PathParam("id_profile") String id_profile){
-        BagDto bag = new BagDto();
+    public ResponseEntity<BagDto> findBag(
+            @PathVariable("id_profile") String id_profile){
+        BagDto bag = bagServices.findBag(id_profile);
         return ResponseEntity.ok(bag);
     }
 
     @PostMapping("/{id_profile}/bag/itens")
     public ResponseEntity<BagItem> addItemBag(
-            @PathParam("id_profile") String id_profile,
+            @PathVariable("id_profile") String id_profile,
             @RequestBody BagItem item
     ){
        return ResponseEntity.ok(bagServices.addItemBag(id_profile,item));

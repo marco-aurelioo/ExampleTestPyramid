@@ -5,6 +5,7 @@ import com.tiozao.AppDependsService.AppDependsService.application.resources.prof
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.websocket.server.PathParam;
 
@@ -12,6 +13,6 @@ import javax.websocket.server.PathParam;
 public interface ProfileHttpClient {
 
     @GetMapping("/{id_profile}")
-    ResponseEntity<ProfileServiceDto> findProfileById(@PathParam("id_profile") String id_profile);
+    ResponseEntity<ProfileServiceDto> findProfileById(@PathVariable("id_profile") String id_profile);
 
 }

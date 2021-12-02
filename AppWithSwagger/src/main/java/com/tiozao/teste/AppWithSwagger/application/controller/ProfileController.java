@@ -9,13 +9,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@RestController("/profile")
+@RestController
 public class ProfileController {
 
     Map<String,ProfileDto> map_profile = new HashMap<String,ProfileDto>();
 
     @GetMapping("/{id_profile}")
-    public ResponseEntity<ProfileDto> findProfile(@PathParam("id_profile") String id_profile){
+    public ResponseEntity<ProfileDto> findProfile(@PathVariable("id_profile") String id_profile){
         ProfileDto profile = map_profile.get(id_profile);
         if(profile!= null){
             return ResponseEntity.ok(profile);
