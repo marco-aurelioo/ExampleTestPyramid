@@ -4,8 +4,6 @@ import com.tiozao.teste.AppWithSwagger.application.controller.model.ProfileDto;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
-import javax.management.InvalidAttributeValueException;
-import java.io.InvalidObjectException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
