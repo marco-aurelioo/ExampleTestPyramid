@@ -25,13 +25,13 @@ public class ProfileService {
         return profileDto;
     }
 
-    public ProfileDto updateProfile(String id_profile, ProfileDto profileDto)
-            throws InvalidAttributeValueException {
+    public ProfileDto updateProfile(String id_profile, ProfileDto profileDto){
         ProfileDto profile_old = getProfile(id_profile);
-        if(profile_old.getId() != id_profile){
-            throw new InvalidAttributeValueException("Parametros invalidos");
+        if(profile_old.getId() == id_profile) {
+            map_profile.put(id_profile, profileDto);
+        }else{
+            throw new IllegalArgumentException("profile incompativel com id.");
         }
-        map_profile.put(id_profile,profileDto);
         return profileDto;
     }
 

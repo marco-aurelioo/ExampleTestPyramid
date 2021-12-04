@@ -19,11 +19,10 @@ public class ControllerHandler  extends ResponseEntityExceptionHandler {
             responseCode = "409",
             description = "Conflito")
     @ExceptionHandler(value
-            = { InvalidAttributeValueException.class })
+            = { IllegalArgumentException.class })
     protected ResponseEntity<Object> handleConflict(
             RuntimeException ex, WebRequest request) {
-        String bodyOfResponse = "Conflito.";
-        return handleExceptionInternal(ex, bodyOfResponse,
+        return handleExceptionInternal(ex, null,
                 new HttpHeaders(), HttpStatus.CONFLICT, request);
     }
 
@@ -34,8 +33,7 @@ public class ControllerHandler  extends ResponseEntityExceptionHandler {
             = { NotFoundException.class })
     protected ResponseEntity<Object> handleNotFound(
             RuntimeException ex, WebRequest request) {
-        String bodyOfResponse = "NotFound.";
-        return handleExceptionInternal(ex, bodyOfResponse,
+        return handleExceptionInternal(ex, null,
                 new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 

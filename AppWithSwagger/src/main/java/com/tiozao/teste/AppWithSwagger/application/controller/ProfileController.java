@@ -20,7 +20,7 @@ public class ProfileController {
         return ResponseEntity.ok(service.findProfile(id_profile));
     }
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<ProfileDto> createProfile(
             @RequestBody ProfileDto profileDto
             ){
@@ -29,8 +29,8 @@ public class ProfileController {
 
     @PutMapping("/{id_profile}")
     public ResponseEntity<ProfileDto> updateProfile(
-            @PathParam("id_profile") String id_profile,
-            @RequestBody ProfileDto profile_n ) throws InvalidAttributeValueException {
+            @PathVariable("id_profile") String id_profile,
+            @RequestBody ProfileDto profile_n ) {
         return ResponseEntity.ok(service.updateProfile(id_profile,profile_n));
     }
 
