@@ -1,11 +1,9 @@
-package com.tiozao.AppDependsService.AppDependsService.application.domain;
+package com.tiozao.AppDependsService.application.domain;
 
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.BagDto;
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.BagItem;
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.ProfileDto;
-import com.tiozao.AppDependsService.AppDependsService.application.resources.profile.ProfileExternalService;
-import com.tiozao.AppDependsService.AppDependsService.application.resources.profile.ProfileHttpClient;
-import com.tiozao.AppDependsService.AppDependsService.application.resources.profile.model.ProfileServiceDto;
+import com.tiozao.AppDependsService.application.controller.model.BagDto;
+import com.tiozao.AppDependsService.application.controller.model.BagItem;
+import com.tiozao.AppDependsService.application.controller.model.ProfileDto;
+import com.tiozao.AppDependsService.application.resources.profile.ProfileExternalService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app-depends-service:
+    build: AppDependsService
+    ports:
+      - "8081:8081"
+  app-with-swagger:
+    build: AppWithSwagger
+    ports:
+      - "8080:8080"

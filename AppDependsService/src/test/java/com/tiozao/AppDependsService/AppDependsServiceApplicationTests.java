@@ -1,4 +1,4 @@
-package com.tiozao.AppDependsService.AppDependsService;
+package com.tiozao.AppDependsService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,8 +1,8 @@
-package com.tiozao.AppDependsService.AppDependsService.application.controller;
+package com.tiozao.AppDependsService.application.controller;
 
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.BagDto;
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.BagItem;
-import com.tiozao.AppDependsService.AppDependsService.application.domain.BagServices;
+import com.tiozao.AppDependsService.application.controller.model.BagDto;
+import com.tiozao.AppDependsService.application.controller.model.BagItem;
+import com.tiozao.AppDependsService.application.domain.BagServices;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

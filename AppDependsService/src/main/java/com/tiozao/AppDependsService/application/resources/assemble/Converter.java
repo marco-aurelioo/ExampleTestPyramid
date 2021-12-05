@@ -1,4 +1,4 @@
-package com.tiozao.AppDependsService.AppDependsService.application.resources.assemble;
+package com.tiozao.AppDependsService.application.resources.assemble;
 
 import java.util.function.Function;
 

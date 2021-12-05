@@ -1,4 +1,4 @@
-package com.tiozao.AppDependsService.AppDependsService.application.resources.profile.model;
+package com.tiozao.AppDependsService.application.resources.profile.model;
 
 public class ProfileServiceDto {
 

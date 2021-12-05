@@ -1,7 +1,7 @@
-package com.tiozao.AppDependsService.AppDependsService.application.resources.assemble;
+package com.tiozao.AppDependsService.application.resources.assemble;
 
-import com.tiozao.AppDependsService.AppDependsService.application.controller.model.ProfileDto;
-import com.tiozao.AppDependsService.AppDependsService.application.resources.profile.model.ProfileServiceDto;
+import com.tiozao.AppDependsService.application.controller.model.ProfileDto;
+import com.tiozao.AppDependsService.application.resources.profile.model.ProfileServiceDto;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,4 +1,4 @@
-package com.tiozao.AppDependsService.AppDependsService.application.controller.model;
+package com.tiozao.AppDependsService.application.controller.model;
 
 public class BagItem {
     private String name;
